@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialActivity">
+
+    <VideoView
+        android:id="@+id/vv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="איך משחקים?"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="אתה בוחר שם, בוחר האם ליצור חדר משחק או להצטרף לאחד קיים בעזרת קוד. מחכים שיהיה מספיק אנשים כדי להתחיל את המשחק ומתחילים(צריך מינימום של 3 משתתפים בשביל להתחיל את המשחק! ועד מקסימום של 10 משתפפים!). מישהו אחד נבחר להיות הבוחר וכל שאר המשתתפים המציירים, מחכים שהבוחר יבחר נושא וברגע שהוא בוחר ושולח הזמן מתחיל לרוץ והמציירים צריכים לצייר את הנושא בזמן המוקצב שיש להם. ברגע שנגמר הזמן הבוחר מדרג את הציורים  על פי לחיצה על הציורים, זה שילחץ עליו ראשון יהיה מקום ראשון וכן הלאה. כשהבוחר מסיים לדרג עוברים לסבב הבא וזה שהיה מקום ראשון בסבב הקודם יהיה הבוחר. כאשר נגמרים כל הסבבים חוזרים חזרה למסך הבית."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

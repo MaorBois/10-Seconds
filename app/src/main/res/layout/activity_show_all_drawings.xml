@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowAllDrawingsActivity">
+
+  <VideoView
+      android:id="@+id/vv_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="0dp" />
+
+  <TextView
+      android:id="@+id/tv_showAllTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginStart="205dp"
+      android:layout_marginTop="80dp"
+      android:layout_marginEnd="206dp"
+      android:textColor="#FFFFFF"
+      android:textSize="34sp"
+      android:textStyle="bold|italic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:id="@+id/linearLayout7"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="188dp"
+      android:orientation="horizontal"
+      android:weightSum="3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_1"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1"
+          tools:ignore="SpeakableTextPresentCheck" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_2"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1"
+          tools:ignore="SpeakableTextPresentCheck" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_3"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1"
+          tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout8"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_4"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_5"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_6"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_7"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_8"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_showAll_players_name_9"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="TextView" />
+
+
+      <ImageButton
+          android:id="@+id/ib_showAll_players_drawing_9"
+          android:layout_width="136dp"
+          android:layout_height="136dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/tv_player_rate_9"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFFFF"
+          android:gravity="center"
+          android:text="" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

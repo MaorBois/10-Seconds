@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WinnerListActivity">
+
+    <VideoView
+        android:id="@+id/vv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ListView
+        android:id="@+id/gameScores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:cacheColorHint="#FFFFFF"
+        android:dividerHeight="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/vv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vv_background"
+        app:layout_constraintTop_toTopOf="@+id/vv_background">
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_gameOver"
+                android:layout_width="88dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Next round in"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_nextRoundTimer"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:text="5 "
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_parenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(You will return to the menu!)"
+            android:textColor="#FF1100"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
